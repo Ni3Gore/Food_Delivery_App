@@ -1,0 +1,175 @@
+@charset "ISO-8859-1";
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+   
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Order Cart Styles */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.cart-container {
+    margin-top: 20px;
+}
+
+.cart-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.item-name {
+    flex: 1;
+}
+
+.item-price {
+    margin-left: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .item-price {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.input {
+            padding: 8px 15px;
+            color: #fff;
+            border: 2px; ;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        input[type="number"] {
+        padding: 5px;
+        border: 2px solid #333;
+        border-radius: 5px;
+        font-size: 12px;
+        width: 80px;
+        }
+
+        input[value="Add More Items"] {
+            background-color: #3498db;
+        }
+
+        input[value="Add More Items"]:hover {
+            background-color: #2770a1;
+        }
+        
+        input[value="CheckOut"] {
+            background-color: #e74c3c;
+        }
+
+        input[value="CheckOut"]:hover {
+            background-color: #a53023;
+        }
+
+        input[value="Update"] {
+            background-color: #3498db;
+        }
+
+        input[value="Update"]:hover {
+            background-color: #2770a1;
+        }
+
+        input[value="Remove"] {
+            background-color: #e74c3c;
+        }
+
+        input[value="Remove"]:hover {
+            background-color: #a53023;
+        }
+        
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}

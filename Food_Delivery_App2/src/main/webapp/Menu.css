@@ -1,0 +1,257 @@
+@charset "ISO-8859-1";
+
+@import url('https://source.unsplash.com/720x600/?food, spicyfood');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.description {
+    max-height: 50px; /* Set a maximum height for the description */
+    overflow: hidden;
+    margin-bottom: 7px; /* Add margin to create space for the button */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar a {
+    
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+   
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+    
+
+    .cart-item {
+        flex-direction: column;
+    }
+
+    .item-price {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.container {
+    max-width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    position: relative;
+    width: calc(25% - 25px);
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; /* Adjusted to a flex container */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+    flex-grow: 1; /* Adjusted to make the image grow within the flex container */
+}
+
+.card-content {
+    flex-grow: 1; /* Adjusted to make the content grow within the flex container */
+}
+
+.card h3 {
+    color: #333;
+}
+
+.card p {
+    color: #666;
+}
+
+.card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 7px 13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Adjusted margin */
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+
+/* Added style for the p element inside the card */
+.card p {
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    margin: 10px 0;
+}
+
+.card p strong {
+    color: #333;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.card p input[type="number"] {
+    padding: 5px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 80px;
+    outline: none;
+}
+
+.card p input[type="number"]:focus {
+    border-color: #333;
+    box-shadow: 0 0 5px #333;
+}
+
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .card {
+        width: calc(50% - 20px); /* Adjusted width for two cards in one row on smaller screens */
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 100%; /* Full width for one card in one row on even smaller screens */
+    }
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+ 
+
+    /* Add hover effect for the menu cards */
+    .card {
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Additional styles for better appearance */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 0 0 calc(25.25% - 25px);
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .card h3,
+    .card p {
+      margin: 10px;
+    }
+    
